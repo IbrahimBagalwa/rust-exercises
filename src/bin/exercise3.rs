@@ -11,7 +11,7 @@
 // * Use the println macro to display the message to the terminal
 
 fn main(){
-    let is_geeting = false;
+    let is_geeting = true;
     if is_geeting {
         println!("Hello");
     }else{
