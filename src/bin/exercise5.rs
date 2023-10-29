@@ -23,10 +23,10 @@ fn main(){
 }
 
 fn while_loop(){
-    let mut count = 1;
-    while count < 4{
-        println!("{}", count);
-        count += 1;
+    let mut count = 5;
+    while count >= 1 {
+        println!("{:?}", count);
+        count -= 1;
     }
 }
 // fn main(){
