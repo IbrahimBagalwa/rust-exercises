@@ -26,16 +26,40 @@ fn print_color(color: &str){
 }
 
 fn main(){
-    let my_people = vec![
-        Person{name: "Ivad".to_owned(), age: 13, favorite_color: String::from("Black")},
-        Person{name: "Izzedin".to_owned(), age: 23, favorite_color: String::from("Blue")},
-        Person{name: "Ibrahim".to_owned(), age:10, favorite_color: String::from("black")},
-        Person{name: "Olivier".to_owned(), age: 6, favorite_color: String::from("Black")},
-        Person{name: "Fabien".to_owned(), age: 9, favorite_color: String::from("Blue")},
-        Person{name: "Eric".to_owned(), age:5, favorite_color: String::from("black")}
+    let my_people: Vec<Person> = vec![
+        Person{
+            name: "Ivad".to_owned(), 
+            age: 13, 
+            favorite_color: String::from("Black")
+        },
+        Person{
+            name: "Izzedin".to_owned(), 
+            age: 23, 
+            favorite_color: String::from("Blue")
+        },
+        Person{
+            name: "Ibrahim".to_owned(), 
+            age:10, 
+            favorite_color: String::from("black")
+        },
+        Person{
+            name: "Olivier".to_owned(), 
+            age: 6, 
+            favorite_color: String::from("Black")
+        },
+        Person{
+            name: "Fabien".to_owned(), 
+            age: 9, 
+            favorite_color: String::from("Blue")
+        },
+        Person{
+            name: "Eric".to_owned(), 
+            age:5, 
+            favorite_color: String::from("black")
+        }
     ];
     for person in &my_people{
-        if person.age < 10 {
+        if person.age <= 10 {
             print_name(&person.name);
             print_color(&person.favorite_color);
         }
