@@ -1,8 +1,10 @@
 ## Enumeration
 
 - Enum is a piece of data that can be one of multiple possiblities.
-  - Each possiblity is called a "Variant"
+  - Each possibility is called a "Variant"
 - Enumeration provides information about your program to the compiler.
+- Enum variants can optionally contain data and than data can be another enum
+- More than one piece of data can be assiciated with a variant.
 
 ### Example
 
