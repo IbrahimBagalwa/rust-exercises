@@ -28,9 +28,8 @@ fn main() {
     for ticket in &my_tickets {
         match ticket {
             Ticket::Backstage(name, price) => {
-                println!("Backstage ticket for: {:?} costs {:?} dollars", name, price)
-            ;
-            
+                println!("Backstage ticket for: {:?} costs {:?} dollars", name, price);
+            }
             Ticket::Vip(name, price) => {
                 println!("Vip ticket for: {:?} costs {:?} dollars", name, price);
             }
