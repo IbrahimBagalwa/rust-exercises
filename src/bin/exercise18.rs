@@ -17,5 +17,33 @@
 #[derive(Debug)]
 struct Adult {
     name: String,
-    age: i32
+    age: u8,
+}
+
+impl Adult {
+    fn new(name: &str, age: u8) -> Result<Self, &str> {
+        if age >= 21 {
+            Ok(Self {
+                name: name.to_string(),
+                age,
+            })
+        } else {
+            Err("Age must be at least 21")
+        }
+    }
+}
+
+
+fn main () {
+    let child = Adult::new("Aldo", 16);
+    let adult = Adult::new("Sandrine", 21);
+    match child {
+        Ok(c) => println!("{} is old years {} ", c.name, c.age),
+        Err(e) => println!("Error occured : {}", e),
+    }
+
+     match adult {
+        Ok(c) => println!("{} is old years {} ", c.name, c.age),
+        Err(e) => println!("Error occured : {}", e),
+    }
 }
