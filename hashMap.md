@@ -15,6 +15,9 @@ Hash map are useful for storing retrieving information if you really know what y
     people.insert("Susan", 22)
     people.insert("Will", 13)
     people.insert("Cathy", 22)
+    people.insert("Susan", 22)
+    people.insert("Will", 13)
+    people.insert("Cathy", 22)
 
     people.remove("Susan")
 
