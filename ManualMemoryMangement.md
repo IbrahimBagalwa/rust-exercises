@@ -9,3 +9,5 @@ For every function call a new stack frame is allocated on top of the current one
 The size of every variable on the stack has to be known at compile time.
 
 When a function is exists it's stack frame is released.
+
+The stack has limited size annd the size is determine by the machine architecture, operating system,compiler and other factors.
