@@ -13,3 +13,9 @@ When a function is exists it's stack frame is released.
 The stack has limited size annd the size is determine by the machine architecture, operating system,compiler and other factors.
 
 ## What us the heap
+
+It's a region of the process memory that is not automatically managed for us.
+
+- It has no size restrictions
+- It is accessible by any function, anywhere in the program
+- We have to always deallocate the memory that we have allocated on the heap
