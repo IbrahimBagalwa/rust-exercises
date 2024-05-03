@@ -19,3 +19,6 @@ It's a region of the process memory that is not automatically managed for us.
 - It has no size restrictions
 - It is accessible by any function, anywhere in the program
 - We have to always deallocate the memory that we have allocated on the heap
+what the restof the team will be doing while you are setting up the project
+
+What will the rest of the team be doing while you are setting up the project?
